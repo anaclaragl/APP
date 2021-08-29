@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/core";
-import {Text, Text1, Text2} from "../styles/Container"
-import {Buto2, sub, Teste, Buto, Logo, Container, FormRow, Label, TextInput, Title, Form} from "../styles/Login";
+import {Container, Text, Text1, Text2} from "../styles/Container"
+import {Buto2, Teste, Buto, Logo, FormRow, Label, TextInput, Title, Form} from "../styles/Login";
 
 export default function Cadastro() {
     const navigation = useNavigation();
@@ -16,7 +16,7 @@ export default function Cadastro() {
           <Form>
           <Logo
                     source={
-                        require("../../assets/logo.jpg")      
+                        require("../../assets/logo.png")      
                     }
                 />
             <Title>CADASTRO</Title>

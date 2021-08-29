@@ -3,8 +3,10 @@ import styled from 'styled-components/native'
 export const Container = styled.SafeAreaView`
     flex: 1;
     background-Color: white;
-    align-Items: center;
-    justify-Content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 `
 export const Text = styled.Text`
     font-size: 15px;

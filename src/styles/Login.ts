@@ -57,12 +57,21 @@ export const Teste = styled.Image`
   height: 70px;
   align-self: center;
 `
-
-export const sub = styled.Text`
-
-`
-
 export const Buto2 = styled.TouchableOpacity`
   margin-top: 12px;
   align-self: center;
+`
+
+export const Buto3 = styled.TouchableOpacity`
+    background: ${colors.lgreen};
+    border: 2px solid #FFFFFF;
+    border-radius: 3px;
+    color: ${colors.white};
+    font-size: 1.2rem;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    box-shadow: 10px 5px 5px gray;
+    align-self: center;
+    margin-top: 8px;
 `
