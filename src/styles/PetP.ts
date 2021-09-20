@@ -1,11 +1,11 @@
 import styled from 'styled-components/native'
 import colors from './colors'
 
-export const Cancela=styled.TouchableOpacity`
+export const Cancela = styled.TouchableOpacity`
 
 `
 
-export const Cancel=styled.Text`
+export const Cancel = styled.Text`
     color: #4DAA45;
     font-size: 16px;
     text-decoration-line: underline;
@@ -24,7 +24,7 @@ export const Plubi = styled.TouchableOpacity`
     border: 2px solid #FFFFFF;
     border-radius: 3px;
     color: ${colors.white};
-    font-size: 1.2rem;
+    font-size: 14px;
     text-align: center;
     width: 60px;
     height: 30px;
@@ -44,6 +44,9 @@ export const Cam = styled.Image`
   height: 80px;
   margin-right: 310 px;
 `
+export const CamB = styled.TouchableOpacity`
+`
+
 export const Galeria = styled.Image`
   width: 80px;
   height: 80px;

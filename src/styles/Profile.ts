@@ -6,7 +6,7 @@ export const Butopro = styled.TouchableOpacity`
     border: 2px solid #FFFFFF;
     border-radius: 3px;
     color: ${colors.white};
-    font-size: 1.2rem;
+    font-size: 14px;
     text-align: center;
     width: 80px;
     height: 30px;

@@ -2,17 +2,19 @@ import styled from 'styled-components/native'
 import colors from './colors'
 
 
-export const Container = styled.View`
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-`
 export const Title = styled.Text`
   font-size: 20px;
   color: ${colors.darkbrown};
   font-weight: 500;
   margin-bottom: 20px;
   text-align: center;
+`
+
+export const Container = styled.SafeAreaView`
+    flex: 1;
+    background-color: ${colors.white};
+    justify-content: center;
+    align-items: center;
 `
 
 export const Form = styled.KeyboardAvoidingView``
@@ -41,14 +43,14 @@ export const Logo = styled.Image`
 `
 export const Buto = styled.TouchableOpacity`
     background: ${colors.lgreen};
-    border: 2px solid #FFFFFF;
+    border: 2px solid ${colors.white};
     border-radius: 3px;
     color: ${colors.white};
-    font-size: 1.2rem;
+    font-size: 14px;
     text-align: center;
     width: 60px;
     height: 30px;
-    box-shadow: 10px 5px 5px gray;
+    box-shadow: 10px 5px 5px ${colors.gray};
     align-self: center;
     margin-top: 8px;
 `
@@ -64,14 +66,21 @@ export const Buto2 = styled.TouchableOpacity`
 
 export const Buto3 = styled.TouchableOpacity`
     background: ${colors.lgreen};
-    border: 2px solid #FFFFFF;
+    border: 2px solid ${colors.white};
     border-radius: 3px;
     color: ${colors.white};
-    font-size: 1.2rem;
+    font-size: 14px;
     text-align: center;
     width: 60px;
     height: 30px;
-    box-shadow: 10px 5px 5px gray;
+    box-shadow: 10px 5px 5px ${colors.gray};
     align-self: center;
     margin-top: 8px;
+`
+
+export const Footer = styled.View`
+    align-items: flex-end;
+    flex: 1;
+    background-color: ${colors.white};
+    flex-direction: row;
 `

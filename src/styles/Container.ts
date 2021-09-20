@@ -1,33 +1,35 @@
 import styled from 'styled-components/native'
+import colors from './colors'
 
 export const Container = styled.SafeAreaView`
     flex: 1;
-    background-Color: white;
+    background-Color: ${colors.white};
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 `
 export const Text = styled.Text`
     font-size: 15px;
-    color: white;
+    color: ${colors.white};
     font-weight: 500;
 `
 
 export const Text1 = styled.Text`
     font-size: 15px;
-    color: darkbrown;
+    color: ${colors.darkbrown};
     font-weight: 400;
 `
 
 export const Text2 = styled.Text`
     font-size: 15px;
-    color: dgreen;
+    color: ${colors.dgreen};
     font-weight: 400;
 `
 
 export const Button = styled.TouchableOpacity`
-    background-color: blueviolet;
-    border-color: blue;
+    background-color: ${colors.blueviolet};
+    border-color: ${colors.blue};
 `
 

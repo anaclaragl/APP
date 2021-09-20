@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "pasta1",
+    "name": "MyPet",
     "slug": "pasta1",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,20 +13,41 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
+    "platforms": ["android", "ios"],
+    
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access your camera",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone",
+        "bundleIdentifier": "com.verana.mypet",
+        "NSPhotoLibraryUsageDescription": "Allow $(PRODUCT_NAME) to access your photos"
+      }
     },
+
     "android": {
+      "package": "com.verana.mypet",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-image-picker",
+      "expo-media-library"
+    ]
   }
 }
