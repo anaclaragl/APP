@@ -13,14 +13,14 @@ export default function Profile({ navigation }: InitTypes) {
   return (
     <Container>
       <Header>
-        <Buto0 onPress={() => { handleNavigation('Buto0') }}>
+        <Buto0 onPress={() => handleNavigation('Buto0')}>
           <PP3
             source={
               require("../../assets/seta.png")
             }
           />
         </Buto0>
-        <Buto2 onPress={() => { handleNavigation('PP2') }}>
+        <Buto2 onPress={() => handleNavigation('PP2')}>
           <PP2
             source={
               require("../../assets/pontos.png")
