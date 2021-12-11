@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Text, Text1 } from "../styles/Container"
 import { FormRow, Label, TextInput } from "../styles/Login";
 import { Cam, Galeria, Cancela, Footer, Header, Cancel, Plubi, CamB } from "../styles/PetP";
-import { InitTypes } from "../types/ScreeStack.types";
+import { InitTypes } from "../types/homestack.types";
 
 
 export default function PetP({ navigation }: InitTypes) {

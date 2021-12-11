@@ -2,9 +2,15 @@ import React from "react";
 import { Container } from "../styles/Container";
 import { Buto2 } from "../styles/Login";
 import { Buto0, Curtidas, Midias, Posts, TextP, Butopro, PP, PP2, PP3, Header, Lugar } from "../styles/Profile"
-import { InitTypes } from "../types/ScreeStack.types";
+import { InitTypes } from "../types/homestack.types";
+import { useAuth } from '../hook/auth';
 
 export default function Profile({ navigation }: InitTypes) {
+  const { signOut } = useAuth();
+
+  function handlesignOut() {
+    signOut();
+  }
   function handleNavigation(params: string) {
     if (params === 'Buto0') {
       navigation.navigate('TimeLine');
@@ -20,10 +26,10 @@ export default function Profile({ navigation }: InitTypes) {
             }
           />
         </Buto0>
-        <Buto2 onPress={() => handleNavigation('PP2')}>
+        <Buto2 onPress={handlesignOut}>
           <PP2
             source={
-              require("../../assets/pontos.png")
+              require("../../assets/logout.png")
             }
           />
         </Buto2>

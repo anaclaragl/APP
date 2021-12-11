@@ -3,7 +3,7 @@ import { TouchableOpacity, SafeAreaView, SafeAreaViewBase } from "react-native";
 import { Container, Text, Text1 } from "../styles/Container";
 import { Botao, Conta, Patinha, Cria, Casa, Vet, Mensage } from "../styles/Botao"
 import { Header, Footer } from "../styles/ONG";
-import { InitTypes } from "../types/ScreeStack.types";
+import { InitTypes } from "../types/homestack.types";
 
 export default function ONG({ navigation }: InitTypes) {
     function handleNavigation(params: string) {

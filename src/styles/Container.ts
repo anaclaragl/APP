@@ -32,4 +32,11 @@ export const Button = styled.TouchableOpacity`
     background-color: ${colors.blueviolet};
     border-color: ${colors.blue};
 `
-
+export const View = styled.View`
+  background-color: ${colors.dgreen};
+  margin: 40px;
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 8px;
+  align-items: center;
+`

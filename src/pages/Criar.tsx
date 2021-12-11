@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../styles/Container";
 import { Header, Nav } from "../styles/Mensagem";
 import { AquiT, Footer, Text1, Ct, Cancela, Selecione, Leia, O, V, A, PE, PP, Bot, At, Aqui, PetP } from "../styles/Criar";
-import { InitTypes } from "../types/ScreeStack.types";
+import { InitTypes } from "../types/homestack.types";
 
 export default function Criar({ navigation }: InitTypes) {
     function handleNavigation(params: string) {

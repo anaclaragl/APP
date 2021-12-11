@@ -1,8 +1,12 @@
 import React from "react";
-import { Container, Text1 } from "../styles/Container";
+import { View, Text, Container, Text1 } from "../styles/Container";
 import { Botao, Conta, Patinha, Cria, Casa, Vet, Mensage } from "../styles/Botao"
 import { Header, Footer } from "../styles/TimeLine";
-import { InitTypes } from "../types/ScreeStack.types";
+import { InitTypes } from "../types/homestack.types";
+import { FlatList } from "react-native";
+import data_antigo from "../services/data_antigo"
+import { useAuth } from "../hook/auth";
+
 
 export default function TimeLine({ navigation }: InitTypes) {
     function handleNavigation(params: string) {
@@ -21,6 +25,13 @@ export default function TimeLine({ navigation }: InitTypes) {
     }
     return (
         <Container>
+            <FlatList data={data_antigo} renderItem={({ item }) => (
+                <View key={item.id}>
+                    <Text1>{item.nome}</Text1>
+                    <Text1>{item.tag}</Text1>
+                    <Text>{item.mensagem}</Text>
+                </View>
+            )} />
             <Header>
                 <Botao onPress={() => handleNavigation('Conta')}>
                     <Conta
